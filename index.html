@@ -99,6 +99,47 @@
         j++;
     }
 
+   
+    var confirmacion =  confirm("¿Deseas continuar con otra cosa?");
+
+    console.log(confirmacion);
+
+    if(confirmacion == true){
+        console.log("Seguimos adelante");
+    }
+    
+
+    //funciones en JS 
+    function suma(a,b) {
+       var res = a + b;
+        console.log(res);  
+    }
+
+    function suma2(a,b){
+        return a + b;
+    }
+
+    suma(2,4);
+
+    var resultadoOpe = suma2(3,6);
+    alert(resultadoOpe);
+
+
+   function esMayorEdad(edadParam) {
+       //If else if else 
+        if (edadParam < 18) {
+            alert("Eres menor de 18 años");
+        } else if(edadParam >= 18 && edadParam <=28)
+        {
+            alert("Estas entre los 18 y los 28 años")
+        }
+        else {
+             alert("Eres mayor de 28");
+        }
+   }
+
+   var edadPrompt = prompt("Introduce tu edad");
+   esMayorEdad(Number(edadPrompt));
 
  </script>
      
