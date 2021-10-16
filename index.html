@@ -23,14 +23,14 @@
 
    var edadFelipeCincoAnios = 32 + 5;
 
-   alert(nombre + ' tendra ' +edadFelipeCincoAnios + ' años');
+   //alert(nombre + ' tendra ' +edadFelipeCincoAnios + ' años');
    console.log(nombre + ' tendra ' +edadFelipeCincoAnios + ' años');
    
    //If
    if (edad < 18) {
-       console.log("Tu eres menor de edad");
+       //console.log("Tu eres menor de edad");
    }else {
-       console.log("Tu eres mayor de edad");
+       //console.log("Tu eres mayor de edad");
    }
 
    //If else if else 
@@ -41,7 +41,7 @@
      alert("Estas entre los 18 y los 28 años")
    }
     else {
-       alert("Eres mayor de 28");
+      // alert("Eres mayor de 28");
    }
 
    //switch
@@ -54,8 +54,8 @@
        default:console.log("No aplica");break;
    }
    
-   alert(typeof nota);
-   alert(typeof nombre);
+   //alert(typeof nota);
+   //alert(typeof nombre);
 
    //bool
    var estaCasado  = true;
@@ -67,6 +67,38 @@
    
    var validacion = 2 == 2;
    console.log(validacion);
+
+
+   //prompt
+
+   var especialidad = prompt('Introduce tu especialidad');
+
+   if(especialidad == "software"){
+      console.log("Eres Ing. de Software");
+   }else if (especialidad == "BDA"){
+       console.log("Eres encargado de las base de datos");
+   }else {
+       console.log(" Tu especialidad no esta en la base de datos")
+   }
+
+   var tablaMultiplicar = prompt('Introduce el numero de la tabla de multiplicar');
+   
+    var tabla  =  Number(tablaMultiplicar);
+     
+    //Ciclos 
+    for (let i = 1; i <= 10; i++) {
+        //console.log(tabla+"x"+i+"="+(tabla * i));
+        //var s = `abc`;
+        console.log(`${tabla}x${i}=${(tabla * i)}`);
+    }
+    
+    //Ciclos 
+    var j  = 1;
+    while (j <= 10) {
+        console.log(`${tabla}x${j}=${(tabla * j)}`);
+        j++;
+    }
+
 
  </script>
      
